@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cphgar8c0slxh"
+path="res://.godot/imported/restraining order.obj-2ee932310bb89da3509b6f09982402ab.mesh"
+
+[deps]
+
+files=["res://.godot/imported/restraining order.obj-2ee932310bb89da3509b6f09982402ab.mesh"]
+
+source_file="res://Models/restraining order.obj"
+dest_files=["res://.godot/imported/restraining order.obj-2ee932310bb89da3509b6f09982402ab.mesh", "res://.godot/imported/restraining order.obj-2ee932310bb89da3509b6f09982402ab.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false
