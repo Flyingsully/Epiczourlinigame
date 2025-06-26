@@ -9,8 +9,7 @@ public partial class Path3d : PathFollow3D
         Path3D path = GetParent<Path3D>();
         Curve3D pathCurve = path.Curve;
 
-        // Ensure the curve is baked
-        pathCurve.BakeInterval = 0.1f; // Optional: set bake precision if needed
+        pathCurve.BakeInterval = 0.1f; 
 
         float pathLength = pathCurve.GetBakedLength();
 
