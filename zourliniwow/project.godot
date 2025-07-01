@@ -14,6 +14,10 @@ config/name="Asessment task"
 run/main_scene="uid://bdg81r18pv41y"
 config/features=PackedStringArray("4.4", "C#", "Forward Plus")
 
+[autoload]
+
+SaveLoad="*res://SaveLoad.cs"
+
 [display]
 
 window/size/mode=3

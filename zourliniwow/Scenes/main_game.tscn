@@ -163,7 +163,7 @@ transform = Transform3D(-0.792598, 0, 1.1937e-07, 0, 1.26054, 0, -6.92911e-08, 0
 mesh = ExtResource("3_6y7pd")
 
 [node name="SpotLight3D" type="SpotLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -8.14291, 4.84257, -13.893)
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -8.14291, 3.95621, -13.893)
 light_energy = 18.49
 light_indirect_energy = 16.0
 light_volumetric_fog_energy = 19.59
