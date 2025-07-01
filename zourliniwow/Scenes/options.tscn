@@ -87,31 +87,6 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 theme_override_constants/separation = 100
 
-[node name="start" type="Button" parent="TextureRect/MarginContainer/VBoxContainer/HBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 4
-theme_override_fonts/font = ExtResource("2_1ehe0")
-theme_override_font_sizes/font_size = 200
-theme_override_styles/hover = SubResource("StyleBoxFlat_re74h")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_10siu")
-theme_override_styles/normal = SubResource("StyleBoxFlat_re74h")
-text = "Start
-"
-expand_icon = true
-metadata/_edit_use_anchors_ = true
-
-[node name="Options" type="Button" parent="TextureRect/MarginContainer/VBoxContainer/HBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 4
-theme_override_fonts/font = ExtResource("2_1ehe0")
-theme_override_font_sizes/font_size = 200
-theme_override_styles/hover = SubResource("StyleBoxFlat_re74h")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_10siu")
-theme_override_styles/normal = SubResource("StyleBoxFlat_re74h")
-text = "Options
-"
-metadata/_edit_use_anchors_ = true
-
 [node name="Exit" type="Button" parent="TextureRect/MarginContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
@@ -124,7 +99,7 @@ text = "Exit"
 metadata/_edit_use_anchors_ = true
 
 [node name="Horse" type="Sprite2D" parent="TextureRect/MarginContainer/VBoxContainer/HBoxContainer"]
-position = Vector2(797.693, -1302.61)
+position = Vector2(178.832, -854.84)
 scale = Vector2(1.72607, 1.98314)
 texture = ExtResource("4_ce3w2")
 
