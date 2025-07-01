@@ -1,26 +1,8 @@
-[gd_scene load_steps=13 format=3 uid="uid://bdg81r18pv41y"]
+[gd_scene load_steps=11 format=3 uid="uid://bdg81r18pv41y"]
 
 [ext_resource type="Script" uid="uid://b84trqkkd6ml1" path="res://Scripts/Main_Menu.cs" id="1_1ehe0"]
 [ext_resource type="FontFile" uid="uid://ft14jopayrqr" path="res://Font/Bleeding_Cowboys.ttf" id="2_1ehe0"]
 [ext_resource type="ArrayMesh" uid="uid://dibladoyfgg7p" path="res://Models/jake.obj" id="2_ce3w2"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bdxpv"]
-bg_color = Color(0.550483, 0, 0.16896, 1)
-corner_detail = 20
-anti_aliasing = false
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cja8r"]
-bg_color = Color(0.656065, 0.451001, 0.386906, 1)
-border_width_top = 30
-border_color = Color(0.129412, 0.129412, 0.129412, 0)
-corner_radius_top_left = 50
-corner_radius_top_right = 50
-corner_radius_bottom_right = 50
-corner_radius_bottom_left = 50
-corner_detail = 20
-shadow_color = Color(0.162066, 0.162066, 0.162066, 1)
-anti_aliasing = false
-anti_aliasing_size = 5.0
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_cbhj7"]
 sky_top_color = Color(0, 0, 0, 1)
@@ -157,65 +139,53 @@ metadata/_edit_use_anchors_ = true
 
 [node name="MarginContainer" type="MarginContainer" parent="Camera3D/CanvasLayer/Control/TextureRect"]
 layout_mode = 1
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = 272.141
-offset_top = 85.0
-offset_right = 969.141
-offset_bottom = 2925.0
+anchors_preset = -1
+anchor_left = 1.45155
+anchor_top = 0.257716
+anchor_right = 1.45155
+anchor_bottom = 0.257716
+offset_left = -276.744
+offset_top = -21.0
+offset_right = 428.256
+offset_bottom = 2819.0
 grow_horizontal = 0
-scale = Vector2(0.331096, 0.24566)
-
-[node name="Options" type="Button" parent="Camera3D/CanvasLayer/Control/TextureRect/MarginContainer"]
-layout_mode = 2
-size_flags_horizontal = 4
-theme_override_fonts/font = ExtResource("2_1ehe0")
-theme_override_font_sizes/font_size = 200
-theme_override_styles/hover = SubResource("StyleBoxFlat_bdxpv")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_cja8r")
-theme_override_styles/normal = SubResource("StyleBoxFlat_bdxpv")
-text = "Options
-"
-flat = true
-alignment = 0
+scale = Vector2(0.379295, 0.25283)
 metadata/_edit_use_anchors_ = true
 
-[node name="Exit" type="Button" parent="Camera3D/CanvasLayer/Control/TextureRect/MarginContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="Camera3D/CanvasLayer/Control/TextureRect/MarginContainer"]
 layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 8
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Camera3D/CanvasLayer/Control/TextureRect/MarginContainer/HBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Start" type="Button" parent="Camera3D/CanvasLayer/Control/TextureRect/MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
 theme_override_fonts/font = ExtResource("2_1ehe0")
 theme_override_font_sizes/font_size = 200
-theme_override_styles/hover = SubResource("StyleBoxFlat_bdxpv")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_cja8r")
-theme_override_styles/normal = SubResource("StyleBoxFlat_bdxpv")
+text = "Start"
+flat = true
+
+[node name="Options" type="Button" parent="Camera3D/CanvasLayer/Control/TextureRect/MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_1ehe0")
+theme_override_font_sizes/font_size = 200
+text = "Options"
+flat = true
+
+[node name="Exit" type="Button" parent="Camera3D/CanvasLayer/Control/TextureRect/MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_1ehe0")
+theme_override_font_sizes/font_size = 200
 text = "Exit"
 flat = true
-metadata/_edit_use_anchors_ = true
-
-[node name="start" type="Button" parent="Camera3D/CanvasLayer/Control/TextureRect/MarginContainer"]
-layout_mode = 2
-size_flags_horizontal = 0
-size_flags_vertical = 0
-theme_override_fonts/font = ExtResource("2_1ehe0")
-theme_override_font_sizes/font_size = 200
-theme_override_styles/hover = SubResource("StyleBoxFlat_bdxpv")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_cja8r")
-theme_override_styles/normal = SubResource("StyleBoxFlat_bdxpv")
-text = "Start
-"
-flat = true
-metadata/_edit_use_anchors_ = true
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Camera3D/CanvasLayer/Control/TextureRect"]
-layout_mode = 2
-offset_left = -6.98582
-offset_top = -7.0
-offset_right = 1673.01
-offset_bottom = 2381.0
-scale = Vector2(0.441526, 0.616979)
-theme_override_colors/default_color = Color(0.842635, 3.56168e-06, 4.81307e-07, 1)
+layout_mode = 0
+offset_right = 1680.0
+offset_bottom = 2388.0
+scale = Vector2(0.802513, 0.775466)
+theme_override_colors/default_color = Color(0.756863, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("2_1ehe0")
 theme_override_font_sizes/normal_font_size = 100
 text = "The Zourlini"

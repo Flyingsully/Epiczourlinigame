@@ -12,7 +12,7 @@ public partial class Main_Menu : Node
 	private PackedScene Main_game;
 	private PackedScene Main_menu;
 	private PackedScene Options_menu;
-
+	 
 
 
 
@@ -20,11 +20,11 @@ public partial class Main_Menu : Node
 	{
 		//BUTTONS AREA AND WHAT THEY DO 
 
-		start = GetNode<Button>("Camera3D/CanvasLayer/Control/TextureRect/MarginContainer/start");
+		start = GetNode<Button>("Camera3D/CanvasLayer/Control/TextureRect/MarginContainer/HBoxContainer/VBoxContainer/Start");
 
-		options = GetNode<Button>("Camera3D/CanvasLayer/Control/TextureRect/MarginContainer/Options");
+		options = GetNode<Button>("Camera3D/CanvasLayer/Control/TextureRect/MarginContainer/HBoxContainer/VBoxContainer/Options");
 
-		exit = GetNode<Button>("Camera3D/CanvasLayer/Control/TextureRect/MarginContainer/Exit");
+		exit = GetNode<Button>("Camera3D/CanvasLayer/Control/TextureRect/MarginContainer/HBoxContainer/VBoxContainer/Exit");
 
 		Main_menu = (PackedScene)ResourceLoader.Load("res://Scenes/main_menu.tscn");
 

@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=4 uid="uid://drr2pi5y8vxkr"]
 
-[ext_resource type="Script" uid="uid://b84trqkkd6ml1" path="res://Scripts/Main_Menu.cs" id="1_1ehe0"]
+[ext_resource type="Script" uid="uid://c7r7uqedbjg4g" path="res://Scripts/Options.cs" id="1_qyyw6"]
 [ext_resource type="FontFile" uid="uid://ft14jopayrqr" path="res://Font/Bleeding_Cowboys.ttf" id="2_1ehe0"]
 [ext_resource type="Texture2D" uid="uid://ddhggl6gvjdn3" path="res://Images/horse.png" id="4_ce3w2"]
 
@@ -38,7 +38,7 @@ offset_bottom = -1.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(1.01329, 1)
-script = ExtResource("1_1ehe0")
+script = ExtResource("1_qyyw6")
 
 [node name="KittyAudio" type="AudioStreamPlayer" parent="."]
 stream = SubResource("AudioStreamMP3_1ehe0")
@@ -99,7 +99,7 @@ text = "Exit"
 metadata/_edit_use_anchors_ = true
 
 [node name="Horse" type="Sprite2D" parent="TextureRect/MarginContainer/VBoxContainer/HBoxContainer"]
-position = Vector2(178.832, -854.84)
+position = Vector2(-152.226, -838.557)
 scale = Vector2(1.72607, 1.98314)
 texture = ExtResource("4_ce3w2")
 

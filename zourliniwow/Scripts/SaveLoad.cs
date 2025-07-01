@@ -16,7 +16,7 @@ public partial class SaveLoad : Node
     }
     private void LoadScore()
     {
-        if (FileAccess.FileExists(SaveLocation)) ;
+        if (FileAccess.FileExists(SaveLocation))
         {
             using var file = FileAccess.Open(SaveLocation, FileAccess.ModeFlags.Read);
             HighScore = (int)file.Get32();
