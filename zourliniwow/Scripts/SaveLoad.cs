@@ -1,27 +1,30 @@
 using Godot;
 using System;
-using System.Runtime.CompilerServices;
 
-public partial class SaveLoad : Node
+public partial class ScoreManager : Node
 {
     private const string SaveLocation = "user://SaveFile.save";
 
-    int HighScore = 0;
-    int CurrentScore = 0;
+    private int highestScore = 0;
+    private int currentScore = 0;
+
+    public override void _Ready()
+    {
+        LoadScore();
+    }
 
     private void SaveScore()
     {
         using var file = FileAccess.Open(SaveLocation, FileAccess.ModeFlags.WriteRead);
-        file.Store32((uint)HighScore);
+        file.Store32((uint)highestScore);
     }
+
     private void LoadScore()
     {
         if (FileAccess.FileExists(SaveLocation))
         {
             using var file = FileAccess.Open(SaveLocation, FileAccess.ModeFlags.Read);
-            HighScore = (int)file.Get32();
+            highestScore = (int)file.Get32();
         }
-
     }
-    
 }
