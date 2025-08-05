@@ -1,9 +1,10 @@
 [gd_scene load_steps=3 format=3 uid="uid://dbql3v7xf27dc"]
 
 [ext_resource type="FontFile" uid="uid://ft14jopayrqr" path="res://Font/Bleeding_Cowboys.ttf" id="1_4pnsc"]
-[ext_resource type="Script" uid="uid://do3qcssui847v" path="res://Scripts/DeathScreen.cs" id="1_gb262"]
+[ext_resource type="Script" uid="uid://do3qcssui847v" path="res://Scripts/Winorlose.cs" id="1_gb262"]
 
 [node name="Node2D" type="Node2D"]
+scale = Vector2(0.414849, 1.50065)
 script = ExtResource("1_gb262")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]

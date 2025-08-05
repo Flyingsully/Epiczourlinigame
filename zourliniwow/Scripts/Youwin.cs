@@ -1,9 +1,9 @@
 using Godot;
 using System;
 
-public partial class youdie : Area3D
+public partial class Youwin : Area3D
 {
-    public PackedScene DeathScreen;
+    public PackedScene Winscreen;
 
     public CharacterBody3D Player;
 
@@ -12,7 +12,7 @@ public partial class youdie : Area3D
     {
         BodyEntered += _on_area_3d_body_entered;
 
-        DeathScreen = (PackedScene)ResourceLoader.Load("res://Scenes/DeathScreen.tscn");
+        Winscreen = (PackedScene)ResourceLoader.Load("res://Scenes/Winscreen.tscn");
     }
 
 
@@ -20,9 +20,10 @@ public partial class youdie : Area3D
     {
         if (body.Name == "Player")
         {
-            GetTree().ChangeSceneToPacked(DeathScreen);
+            GetTree().ChangeSceneToPacked(Winscreen);
             GD.Print("fb;nkl;sdds");
         }
     }
 
 }
+

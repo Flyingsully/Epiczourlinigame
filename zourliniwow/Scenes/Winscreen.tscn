@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://baqd1p200fqei"]
+
+[ext_resource type="Script" uid="uid://do3qcssui847v" path="res://Scripts/Winorlose.cs" id="1_5abh5"]
+[ext_resource type="FontFile" uid="uid://ft14jopayrqr" path="res://Font/Bleeding_Cowboys.ttf" id="1_fod7f"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_5abh5")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Button" type="Button" parent="CanvasLayer"]
+offset_right = 406.0
+offset_bottom = 232.0
+scale = Vector2(2.83114, 2.80976)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("1_fod7f")
+theme_override_font_sizes/font_size = 100
+text = "You won"
+metadata/_edit_use_anchors_ = true

@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-public partial class winorlose : Node2D
+public partial class DeathScreen : Node2D
 {
     private Button Backtomain;
 
